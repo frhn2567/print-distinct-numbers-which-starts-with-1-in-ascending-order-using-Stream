@@ -8,6 +8,7 @@ public class Main
 		numbers.stream()
 		         .filter(num->String.valueOf(num).startsWith("1"))
 		           .distinct()
+                     .sorted()
 		            .forEach(System.out::println);
 		
 	}
