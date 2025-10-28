@@ -1,0 +1,14 @@
+import java.util.*;
+import java.util.stream.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		List<Integer> numbers=Arrays.asList(121,156,212,441,31,41,61,11,111,18,15,01,1,23);
+		numbers.stream()
+		         .filter(num->String.valueOf(num).startsWith("1"))
+		           .distinct()
+		            .forEach(System.out::println);
+		
+	}
+}
